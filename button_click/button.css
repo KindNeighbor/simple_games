@@ -99,8 +99,31 @@ h1 {
 }
 
 body {
-  background-image: url("file:///C:/Users/USER/Desktop/%EA%B0%9C%EC%9D%B8%20%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8/%EB%B3%B4%EB%85%B8%EB%B3%B4%EB%85%B8.jpg");
+  background-image: url("보노보노.jpg");
   background-size: cover;
   background-position: center top;
   background-repeat: no-repeat;
+}
+
+h2 {
+  background-color: antiquewhite;
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+  display: inline-block;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+#scoreHistory {
+  font-size: 18px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: antiquewhite;
+  padding: 5px;
+  display: inline-block;
+  border-radius: 8px;
 }

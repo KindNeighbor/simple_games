@@ -37,9 +37,11 @@ function startGame() {
           gameRunning = false;
           button.disabled = true;
           restartBtn.disabled = false;
+          addScoreToHistory(`${score}`)
           alert(`게임 종료! 당신의 점수는 ${score}점입니다.`);
         }
     }, 1000);
+    scoreHistory.length = 0;
 }
 
 // 버튼 클릭시 점수 증가
