@@ -1,3 +1,106 @@
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#btn {
+  background-color: #1ba716;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+#btn:disabled {
+  background-color: #ccc;
+  color: #666;
+  cursor: not-allowed;
+}
+
 #game {
-    text-align: center;
-  }
+  text-align: center;
+  margin-top: 50px;
+}
+
+#score, #timer {
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+#startBtn {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#startBtn:disabled {
+  background-color: #ccc;
+  color: #666;
+  cursor: not-allowed;
+}
+
+#restartBtn {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  display: none;
+}
+
+#restartBtn:disabled {
+  background-color: #ccc;
+  color: #666;
+  cursor: not-allowed;
+}
+
+h1 {
+  background-color: antiquewhite;
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+  display: inline-block;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+#score {
+  font-size: 18px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: antiquewhite;
+  padding: 5px;
+  display: inline;
+  border-radius: 8px;
+}
+
+#timer {
+  font-size: 18px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: antiquewhite;
+  padding: 5px;
+  display: inline-block;
+  border-radius: 8px;
+}
+
+body {
+  background-image: url("file:///C:/Users/USER/Desktop/%EA%B0%9C%EC%9D%B8%20%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8/%EB%B3%B4%EB%85%B8%EB%B3%B4%EB%85%B8.jpg");
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
