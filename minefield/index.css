@@ -1,0 +1,13 @@
+#minefield {
+  display: flex;
+  flex-wrap: wrap;
+  width: 300px;
+}
+
+.minecell {
+  width: 30px;
+  height: 30px;
+  border: 1px solid black;
+  box-sizing: border-box;
+  text-align: center;
+}
