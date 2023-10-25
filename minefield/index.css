@@ -1,3 +1,7 @@
+#game-setup {
+  margin-bottom: 20px; /* Add margin at the bottom */
+}
+
 #minefield {
   display: flex;
   flex-wrap: wrap;
