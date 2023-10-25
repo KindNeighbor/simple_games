@@ -7,6 +7,11 @@ let cells = []; // 모든 셀을 저장하는 배열
 let openedCount = 0;
 let gameover = false;
 
+// 재시작 버튼
+document.getElementById("restartButton").addEventListener("click", function() {
+    location.reload(); // 페이지를 새로고침하여 게임을 다시 시작
+});
+
 // 지뢰 위치 랜덤 생성
 let mines = Array(size * size).fill(false);
 for (let i = 0; i < mineCount; ) {
@@ -47,6 +52,7 @@ for (let y = 0; y < size; y++) {
             cell.textContent = '💣';
             bombMessage.style.display = 'inline-block';
             gameover = true;
+            restartButton.style.display = "block";
         } else {
             openCell(x, y);
             checkWin();
@@ -59,7 +65,7 @@ for (let y = 0; y < size; y++) {
 }
 
 function openCell(x, y) {
-    let cell = cells[y * size + x];
+    let cell = cells[x + y * size];
     
     // 이미 열린 셀이거나 플래그가 설치된 셀이면 열지 않음
     if (cell.style.backgroundColor === 'blue' || cell.style.backgroundColor === 'green') return;
@@ -107,5 +113,7 @@ function countMines(x, y) {
 function checkWin() {
     if (openedCount === size * size - mineCount) {
         win.style.display = 'inline-block';
+        restartButton.style.display = "block";
     }
 }
+
