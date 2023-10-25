@@ -52,13 +52,15 @@ function startGame(size, mineCount) {
                 event.preventDefault(); // 기본 오른쪽 클릭 메뉴 방지
     
                 if (gameover) return;
-            
-                if (cell.style.backgroundColor === 'blue') { // 이미 플래그가 설치된 경우
-                    cell.style.backgroundColor = ''; // 플래그 제거
-                    cell.textContent = '';
-                } else { // 아직 플래그가 설치되지 않은 경우
-                    cell.style.backgroundColor = 'blue'; // 플래그 설치
-                    cell.textContent = '🚩';
+                
+                if (cell.style.backgroundColor != 'green') {
+                    if (cell.style.backgroundColor === 'blue') { // 이미 플래그가 설치된 경우
+                        cell.style.backgroundColor = ''; // 플래그 제거
+                        cell.textContent = '';
+                    } else { // 아직 플래그가 설치되지 않은 경우
+                        cell.style.backgroundColor = 'blue'; // 플래그 설치
+                        cell.textContent = '🚩';
+                    }  
                 }
             });
   
