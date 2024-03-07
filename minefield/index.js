@@ -1,7 +1,10 @@
 
 // 재시작 버튼
 document.getElementById("restartButton").addEventListener("click", function() {
-    location.reload(); // 페이지를 새로고침하여 게임을 다시 시작
+    const size = parseInt(document.getElementById("sizeInput").value);
+    const mineCount = parseInt(document.getElementById("mineCountInput").value);
+    startGame(size, mineCount); // 페이지를 새로고침하여 게임을 다시 시작
+    restartButton.style.display = "none";
 });
 
 // 게임시작 버튼
@@ -16,6 +19,7 @@ document.getElementById("startButton").addEventListener("click", function() {
     }
 });
 
+// 게임 시작!
 function startGame(size, mineCount) {
     const minefield = document.getElementById('minefield');
     const bombMessage = document.getElementById('bomb');
